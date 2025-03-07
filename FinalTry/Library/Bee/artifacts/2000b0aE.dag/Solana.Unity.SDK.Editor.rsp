@@ -96,6 +96,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -315,6 +316,13 @@
 -r:"/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll"
 -r:"/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
+-r:"Assets/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll"
+-r:"Assets/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.ExtensionMethods.dll"
+-r:"Assets/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.Geometry.dll"
+-r:"Assets/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.PbfReader.dll"
+-r:"Assets/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.VectorTileReader.dll"
+-r:"Assets/Mapbox/Core/Plugins/ThirdParty/Mapbox.IO.Compression/net35/Mapbox.IO.Compression.dll"
+-r:"Assets/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll"
 -r:"Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Plugins/ZXing/zxing.unity.dll"
 -r:"Library/PackageCache/com.solana.unity_sdk@e7218c9469/Packages/Avro.dll"
 -r:"Library/PackageCache/com.solana.unity_sdk@e7218c9469/Packages/BouncyCastle.Crypto.dll"
@@ -330,9 +338,12 @@
 -r:"Library/PackageCache/com.solana.unity_sdk@e7218c9469/Packages/Solana.Unity.Soar.dll"
 -r:"Library/PackageCache/com.solana.unity_sdk@e7218c9469/Packages/Solana.Unity.Wallet.dll"
 -r:"Library/PackageCache/com.solana.unity_sdk@e7218c9469/Packages/websocket-sharp-latest.dll"
+-r:"Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/com.solana.unity_sdk.ref.dll"
+-r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
+-r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
