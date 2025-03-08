@@ -7,6 +7,10 @@ Darwin version:          24.3.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
+
+The following diagnostic switches are modified from their default values:
+	ProfileOpenCLJobs: False (default True)
+
 Using pre-set license
 Pro License: YES
 
@@ -22,7 +26,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65356
+64032
 Successfully changed project path to: /Users/ceasarattar/Desktop/LatestGame/FinalTry
 /Users/ceasarattar/Desktop/LatestGame/FinalTry
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +60,12 @@ Successfully changed project path to: /Users/ceasarattar/Desktop/LatestGame/Fina
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8601307200] Host "[IP] 192.168.1.121 [Port] 0 [Flags] 2 [Guid] 4275082930 [EditorId] 4275082930 [Version] 1048832 [Id] OSXEditor(0,MacBookPro) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8601307200] Host "[IP] 192.168.1.121 [Port] 0 [Flags] 2 [Guid] 2576366812 [EditorId] 2576366812 [Version] 1048832 [Id] OSXEditor(0,Ceasars-MacBook-Pro-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8601307200] Host "[IP] 192.168.1.121 [Port] 0 [Flags] 2 [Guid] 4275082930 [EditorId] 4275082930 [Version] 1048832 [Id] OSXEditor(0,MacBookPro) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8601307200] Host "[IP] 192.168.1.121 [Port] 0 [Flags] 2 [Guid] 2576366812 [EditorId] 2576366812 [Version] 1048832 [Id] OSXEditor(0,Ceasars-MacBook-Pro-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 27.16 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 11.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.17f1 (4fc78088f837)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,48 +80,50 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56378
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.17f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.17f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003103 seconds.
-- Loaded All Assemblies, in  0.235 seconds
+Registered in 0.003013 seconds.
+- Loaded All Assemblies, in  0.230 seconds
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
+Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
+	ProfileOpenCLJobs: False
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.176 seconds
-Domain Reload Profiling: 411ms
-	BeginReloadAssembly (69ms)
+- Finished resetting the current domain, in  0.171 seconds
+Domain Reload Profiling: 401ms
+	BeginReloadAssembly (64ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (25ms)
+	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (100ms)
-		LoadAssemblies (70ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (101ms)
+		LoadAssemblies (65ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (98ms)
-			TypeCache.Refresh (97ms)
-				TypeCache.ScanAssembly (87ms)
+		AnalyzeDomain (99ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (88ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (176ms)
+	FinalizeReload (171ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (138ms)
+		SetupLoadedEditorAssemblies (133ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (14ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (89ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
+			ProcessInitializeOnLoadAttributes (86ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -128,8 +134,8 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.380 seconds
-Refreshing native plugins compatible for Editor in 4.73 ms, found 1 plugins.
+- Loaded All Assemblies, in  0.352 seconds
+Refreshing native plugins compatible for Editor in 3.99 ms, found 0 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
@@ -137,6 +143,8 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
+	ProfileOpenCLJobs: False
 Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
@@ -144,635 +152,67 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.269 seconds
-Domain Reload Profiling: 649ms
-	BeginReloadAssembly (77ms)
+- Finished resetting the current domain, in  0.225 seconds
+Domain Reload Profiling: 578ms
+	BeginReloadAssembly (75ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (25ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (245ms)
-		LoadAssemblies (184ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (220ms)
+		LoadAssemblies (171ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (85ms)
-				TypeCache.ScanAssembly (71ms)
-			ScanForSourceGeneratedMonoScriptInfo (7ms)
+		AnalyzeDomain (84ms)
+			TypeCache.Refresh (75ms)
+				TypeCache.ScanAssembly (63ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (269ms)
+	FinalizeReload (226ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (176ms)
+		SetupLoadedEditorAssemblies (132ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (30ms)
-			ProcessInitializeOnLoadAttributes (123ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
+			BeforeProcessingInitializeOnLoad (23ms)
+			ProcessInitializeOnLoadAttributes (85ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 7.51 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 3.98 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2773 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 129 unused Assets / (1.4 MB). Loaded Objects now: 3149.
-Memory consumption went from 136.9 MB to 135.5 MB.
-Total: 2.899542 ms (FindLiveObjects: 0.106000 ms CreateObjectMapping: 0.034791 ms MarkObjects: 2.193334 ms  DeleteObjects: 0.564583 ms)
+Unloading 1539 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 95 unused Assets / (88.7 KB). Loaded Objects now: 1938.
+Memory consumption went from 101.1 MB to 101.0 MB.
+Total: 2.414167 ms (FindLiveObjects: 0.074625 ms CreateObjectMapping: 0.023417 ms MarkObjects: 2.178250 ms  DeleteObjects: 0.136417 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 534170.419584 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0826c28cb0ac08c7995a8211ea1eb1f9') in 0.001940 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
+  Time since last request: 573431.391508 seconds.
   path: Assets/Readme.asset
   artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b11e6936975384c89f4f7e6268c69a') in 0.000437 seconds
+Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b11e6936975384c89f4f7e6268c69a') in 0.006606 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 1125.899156 seconds.
-  path: Assets/Mapbox/Core
-  artifactKey: Guid(9baba017b10fa4eaeab33dade1902adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Core using Guid(9baba017b10fa4eaeab33dade1902adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ba10cb3ce5d04b828f6b05d4cafa80') in 0.001725 seconds
-Number of updated asset objects reloaded before import = 4
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 120.664418 seconds.
-  path: Assets/Mapbox/Examples/Resources/3DPoiMarker.prefab
-  artifactKey: Guid(44828d4325e8b544ca6ffec352cfe165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/3DPoiMarker.prefab using Guid(44828d4325e8b544ca6ffec352cfe165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250768fa579933436fed64c903917483') in 0.274858 seconds
-Number of updated asset objects reloaded before import = 8
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/alcohol-shop-15.png
-  artifactKey: Guid(df4b49bce9c77c44b95674e6c1249cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/alcohol-shop-15.png using Guid(df4b49bce9c77c44b95674e6c1249cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57fe6a88f9f0f29c09c40a01562212a') in 0.022032 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/dog-park-15.png
-  artifactKey: Guid(3e53e851d8f2bda42af8f59b9a3a0a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/dog-park-15.png using Guid(3e53e851d8f2bda42af8f59b9a3a0a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff64fbf108fff38bd1c6a9f468162d1') in 0.005274 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerBarrierLineMeshModifier.asset
-  artifactKey: Guid(6256fede3c5b3ec4c912924d6f94a32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerBarrierLineMeshModifier.asset using Guid(6256fede3c5b3ec4c912924d6f94a32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2cfce3ce069f332c288b8343e812df1') in 0.000514 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/bicycle-share-15.png
-  artifactKey: Guid(0a300f3c30c4f734abb83f28a7dc10e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/bicycle-share-15.png using Guid(0a300f3c30c4f734abb83f28a7dc10e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83df2482bd0bc20015a24eda7d3ef144') in 0.005006 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerBarrierLayer.asset
-  artifactKey: Guid(22e0f35be3a038942b4521c6fec760d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerBarrierLayer.asset using Guid(22e0f35be3a038942b4521c6fec760d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb9eba741f7ea45ab0f0156b804cc69') in 0.000534 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerDefaultBarrier.asset
-  artifactKey: Guid(a8539f1dd504b0c4eafbdaf0a7128a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerDefaultBarrier.asset using Guid(a8539f1dd504b0c4eafbdaf0a7128a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7ab4d23216e93e460e4138fab17326') in 0.000406 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/farm-15.png
-  artifactKey: Guid(2991a81e7fd67224fabdcab9cb8290e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/farm-15.png using Guid(2991a81e7fd67224fabdcab9cb8290e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10d871a10982fa819adc57de9f374e9') in 0.004703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/library-15.png
-  artifactKey: Guid(11570ed0bcc394b48b43dc68a4d7259b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/library-15.png using Guid(11570ed0bcc394b48b43dc68a4d7259b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c352df46f819642e201a9709e367bce') in 0.004832 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/LandcoverLayer/ExplorerDarkGreen.mat
-  artifactKey: Guid(ff2f824fb9ab7b54b90a44e4394d18ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/LandcoverLayer/ExplorerDarkGreen.mat using Guid(ff2f824fb9ab7b54b90a44e4394d18ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66cb7d95d959aabb834955f96da696be') in 0.382570 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/XR/Loaders/ARCoreLoader.asset
-  artifactKey: Guid(c2952c9a0545b444e8dd28b7e8830311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Loaders/ARCoreLoader.asset using Guid(c2952c9a0545b444e8dd28b7e8830311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a28912ea147c4cd117044e095636d87') in 0.001863 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules/AddRemoveBuildingMonobehavior.asset
-  artifactKey: Guid(13e618a59576440f598bb23fcb160b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules/AddRemoveBuildingMonobehavior.asset using Guid(13e618a59576440f598bb23fcb160b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87fb1950cd223dab25a7980513467c89') in 0.000499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Mapbox/Examples/3_POIPlacement/Modifiers/ArtsPoiLabelModifier.asset
-  artifactKey: Guid(4aeb61055bc3e481795eabb6cbf767f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/3_POIPlacement/Modifiers/ArtsPoiLabelModifier.asset using Guid(4aeb61055bc3e481795eabb6cbf767f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b88be0986d866701cad15065761addd') in 0.000390 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Mapbox/Resources/MapboxStyles/Styles/MapboxSampleStyles/Dark/Assets/Materials/DarkTopMaterial.mat
-  artifactKey: Guid(1c7d76a44fa2d4908bf4ee096556a5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/MapboxStyles/Styles/MapboxSampleStyles/Dark/Assets/Materials/DarkTopMaterial.mat using Guid(1c7d76a44fa2d4908bf4ee096556a5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae3ba91817d7b0d2261a3139c0240dd') in 0.016709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Mapbox/Examples/Prefabs/CustomMarkerPrefab.prefab
-  artifactKey: Guid(9b5b1b761a8994c07affd0a05396633b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Prefabs/CustomMarkerPrefab.prefab using Guid(9b5b1b761a8994c07affd0a05396633b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352787ea8e8d11709c92d7871afd355e') in 0.266581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/airfield-15.png
-  artifactKey: Guid(f98ca583e42f68e47bfb1021409de126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/airfield-15.png using Guid(f98ca583e42f68e47bfb1021409de126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15fba920a0223cef463018ba376be18f') in 0.005093 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/Mapbox/Resources/HeroStructures/Meshes/CoitTower.fbx
-  artifactKey: Guid(3b08328d5fd4f45b38052b68b9e3b74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/HeroStructures/Meshes/CoitTower.fbx using Guid(3b08328d5fd4f45b38052b68b9e3b74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe84cc7cf674fb6188e5d3df4b09acb') in 0.144871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/landmark-15.png
-  artifactKey: Guid(85a7e8da525d6d242b49c9d68f9b3a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/landmark-15.png using Guid(85a7e8da525d6d242b49c9d68f9b3a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ccbd5e60ff0f001bfd3e4b0b8d020be') in 0.004752 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Buttons/Icons/garage.png
-  artifactKey: Guid(6ab43d6521993684cacec24377137a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Buttons/Icons/garage.png using Guid(6ab43d6521993684cacec24377137a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25eb71ada7c5cf981ea559c18fb9583c') in 0.006418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerBarrierHeightModifier.asset
-  artifactKey: Guid(0cc71dae0748f2047aa09a55873dba03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/BarrierLine/ExplorerBarrierHeightModifier.asset using Guid(0cc71dae0748f2047aa09a55873dba03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee5b67344a9d5c08d632de386788f06') in 0.000444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/WaterwayLayer/ExplorerDarkBlue.mat
-  artifactKey: Guid(ab4ee1288a054a84b85ba5cf5a0abf34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/WaterwayLayer/ExplorerDarkBlue.mat using Guid(ab4ee1288a054a84b85ba5cf5a0abf34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757aecd6a2ab2101499d437377a3fc10') in 0.003632 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000100 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules/AddToTreeCollectionModifier.asset
-  artifactKey: Guid(d534c6a861f735c4dab3990ac3c05158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules/AddToTreeCollectionModifier.asset using Guid(d534c6a861f735c4dab3990ac3c05158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e3f3643fa533b005c20a46fb56b6ef') in 0.000383 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/amusement-park-15.png
-  artifactKey: Guid(2b59ad5241786eb46be431351c72b926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/amusement-park-15.png using Guid(2b59ad5241786eb46be431351c72b926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5bf6c98bd1b9bc0ac19f972b94ce119') in 0.004972 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/harbor-15.png
-  artifactKey: Guid(296d283c62a405146aaccf32d610de63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/harbor-15.png using Guid(296d283c62a405146aaccf32d610de63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69875883b4d87c5c4c46ee1512195d35') in 0.005052 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/Mapbox/Resources/HeroStructures/Meshes/ChryslerBuilding.fbx
-  artifactKey: Guid(9ef00dc880db74fa2a52720b0b7b3c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/HeroStructures/Meshes/ChryslerBuilding.fbx using Guid(9ef00dc880db74fa2a52720b0b7b3c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8be00f7dfd8754ba116da417e348eb') in 0.026230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/karaoke-15.png
-  artifactKey: Guid(59827cdc97caf864ea91472943a6bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/karaoke-15.png using Guid(59827cdc97caf864ea91472943a6bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecedd575c6742d8aedf94fe9f4f09275') in 0.005030 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/car-15.png
-  artifactKey: Guid(6b42d9d154bbf8043960ed1d7bc122e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/car-15.png using Guid(6b42d9d154bbf8043960ed1d7bc122e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b8caa28ad01025639d155476c20630c') in 0.004512 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Mapbox/Resources/Mapbox/ScenesList.asset
-  artifactKey: Guid(5424214e66dd94ac79007c7c31989849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/Mapbox/ScenesList.asset using Guid(5424214e66dd94ac79007c7c31989849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b16c35769529d017f8f79cb2bd84be83') in 0.002151 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/Mapbox/Examples/Prefabs/ForwardGeocoderCanvas.prefab
-  artifactKey: Guid(be407b770a1444c32b66d2c4ecd7331c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Prefabs/ForwardGeocoderCanvas.prefab using Guid(be407b770a1444c32b66d2c4ecd7331c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e116d12adf4b99b74dcd6a539dffe60') in 0.007115 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/LabelLayers/ExplorerMarineLabelLayer.asset
-  artifactKey: Guid(e7ee854b487dc0541bf3215510907674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/LabelLayers/ExplorerMarineLabelLayer.asset using Guid(e7ee854b487dc0541bf3215510907674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af930596db68ac38f23ecaa5b018602') in 0.000485 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000515 seconds.
-  path: Assets/Mapbox/Resources/HeroStructures/Meshes/EmpireStateBuilding.fbx
-  artifactKey: Guid(5a2fea3a89fae4f97b0661209286d9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/HeroStructures/Meshes/EmpireStateBuilding.fbx using Guid(5a2fea3a89fae4f97b0661209286d9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2a0b50b9724845b71067a5437e7966') in 0.010714 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/XR/Settings/ARKitSettings.asset
-  artifactKey: Guid(4083310a53bd94376b91c3031525525b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Settings/ARKitSettings.asset using Guid(4083310a53bd94376b91c3031525525b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a16f51118d4ff79c85fa3839daca6a4') in 0.000779 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Mapbox/Examples/1_DataExplorer/Modules/WaterwayLayer/ExplorerDarkBlueMaterialModifier.asset
-  artifactKey: Guid(1e5e24f3318196d4690e789415c9f2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/1_DataExplorer/Modules/WaterwayLayer/ExplorerDarkBlueMaterialModifier.asset using Guid(1e5e24f3318196d4690e789415c9f2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5afd0b63fa98f19181ceb3193b0cf165') in 0.000356 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/garden-15.png
-  artifactKey: Guid(111fbabb4b76cc44f9b413ae15c1119e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/garden-15.png using Guid(111fbabb4b76cc44f9b413ae15c1119e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5814cabad953a33c386c4892d3bd4746') in 0.005038 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Mapbox/Resources/MapboxStyles/Styles/MapboxSampleStyles/Dark/Assets/Atlas/DarkAtlasInfo.asset
-  artifactKey: Guid(59ca6a03aa1ab4d5797fc37bc0f37797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/MapboxStyles/Styles/MapboxSampleStyles/Dark/Assets/Atlas/DarkAtlasInfo.asset using Guid(59ca6a03aa1ab4d5797fc37bc0f37797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7eb1dc00adec56e205eb49a611cc1d') in 0.000494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/garden-center-15.png
-  artifactKey: Guid(5c6243868d2d4334b85bb86f416e0815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/garden-center-15.png using Guid(5c6243868d2d4334b85bb86f416e0815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a9cc8b322412f212b7199882dff644') in 0.005480 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Mapbox/Resources/Mapbox/PrefabList.asset
-  artifactKey: Guid(8d2ff5cb743b345f4a7ff8b3cdc69f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/Mapbox/PrefabList.asset using Guid(8d2ff5cb743b345f4a7ff8b3cdc69f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2848b126e597761f10e1e1ddc9f41bec') in 0.000942 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/Astro@walk.fbx
-  artifactKey: Guid(fc9c407526569a040aff73ce885504c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/Astro@walk.fbx using Guid(fc9c407526569a040aff73ce885504c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a70583f73e463b6eebb49b7e599ca1f') in 0.319048 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 62
-========================================================================
-Received Import Request.
-  Time since last request: 1.843860 seconds.
-  path: Assets/Mapbox/Examples/Resources/Assets/MapboxCombinedPin.fbx
-  artifactKey: Guid(bb96716ce122749b2a0d52a7de62ff98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/Assets/MapboxCombinedPin.fbx using Guid(bb96716ce122749b2a0d52a7de62ff98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74033a54f1b98e2f479dc7d473d76a1c') in 0.033037 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/park-15.png
-  artifactKey: Guid(c6f2d0376dc02bd4783e9b539e0fdc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/park-15.png using Guid(c6f2d0376dc02bd4783e9b539e0fdc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93da14c65a4fb2658dba11fbe95c83d5') in 0.005748 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules/ParkVectorLayerVisualizer.asset
-  artifactKey: Guid(42d0c054e597a4590a29b5b66fbec4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules/ParkVectorLayerVisualizer.asset using Guid(42d0c054e597a4590a29b5b66fbec4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12eb728d406c3624b1dc2f3c116136ab') in 0.000558 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular Wallet.asset
-  artifactKey: Guid(915db7220e0f10d4695b4a2798413054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular Wallet.asset using Guid(915db7220e0f10d4695b4a2798413054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9918f16b8110da65435d52901c3b3acc') in 0.144868 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/Mapbox/Resources/HeroStructures/Meshes/OneWorldTradeCenter.fbx
-  artifactKey: Guid(891973e6c0cc14d778d0090973a4ac11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/HeroStructures/Meshes/OneWorldTradeCenter.fbx using Guid(891973e6c0cc14d778d0090973a4ac11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec040e61a24eab149a16fddb13daee0b') in 0.010588 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000105 seconds.
-  path: Assets/Mapbox/Resources/Mapbox/PrefabScreens/WorldScaleAR.gif
-  artifactKey: Guid(544693615a8f3459c94a0a5a8930a702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/Mapbox/PrefabScreens/WorldScaleAR.gif using Guid(544693615a8f3459c94a0a5a8930a702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9e4b365223b0327c42f26920f2192e') in 0.007208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules/ParkModifierStack.asset
-  artifactKey: Guid(000166c0f999e4d44b968d47724ea242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules/ParkModifierStack.asset using Guid(000166c0f999e4d44b968d47724ea242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f019dd73c0b6150baa4e70e33d91a65') in 0.000644 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular SDF.asset
-  artifactKey: Guid(08dcb00d89db0ee4f959295b5c5f2d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular SDF.asset using Guid(08dcb00d89db0ee4f959295b5c5f2d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53704dc87ea4d439c4d24e4964a383b') in 0.025420 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000733 seconds.
-  path: Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular Score.asset
-  artifactKey: Guid(b4cd326bfb7b966428a75f6ec83be8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular Score.asset using Guid(b4cd326bfb7b966428a75f6ec83be8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352506666ef0def659a27915ba63fb40') in 0.011917 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Mapbox/Resources/HeroStructures/Meshes/TransamericaPyramid.fbx
-  artifactKey: Guid(7484dc0391f0f4984979c271ba6db225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Resources/HeroStructures/Meshes/TransamericaPyramid.fbx using Guid(7484dc0391f0f4984979c271ba6db225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e97db21a91681a1aeb563b31e0c656') in 0.009543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules/ParkLayerModifier.asset
-  artifactKey: Guid(3505ec4e61e3f4c4d88fc3c5548e7144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules/ParkLayerModifier.asset using Guid(3505ec4e61e3f4c4d88fc3c5548e7144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8010d9b5bde7ff156e0113f09bc53db3') in 0.000398 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/ParkMaterial.mat
-  artifactKey: Guid(dd22d0eb52da4594e90fbb4dd7ae0baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/ParkMaterial.mat using Guid(dd22d0eb52da4594e90fbb4dd7ae0baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd24bf95e71fdf8ddd86c273d5954ca') in 0.004058 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules/TransparentOrangeMaterialModifier.asset
-  artifactKey: Guid(8c839e30191934c63948abcddd333a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules/TransparentOrangeMaterialModifier.asset using Guid(8c839e30191934c63948abcddd333a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731988012383b55208bea4594f35f552') in 0.000468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/Mapbox/Examples/Resources/Assets/MapboxFloatingPinNoBase.fbx
-  artifactKey: Guid(fd394afabe3da4d9e8898092f298f54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/Assets/MapboxFloatingPinNoBase.fbx using Guid(fd394afabe3da4d9e8898092f298f54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824a5579644c1d87e9c94049cb4bbcff') in 0.016611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Mapbox/Examples/Resources/Assets/MapboxPin.fbx
-  artifactKey: Guid(846b0d2c97aef4f2eae21f0e2a7822c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/Assets/MapboxPin.fbx using Guid(846b0d2c97aef4f2eae21f0e2a7822c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7695dcb0b57547380352f70a0d0049') in 0.017005 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Mapbox/Examples/Resources/Assets/MapboxHollowUprightPin.fbx
-  artifactKey: Guid(116af72a5fd4e4a2c8d1730f94b8a8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/Assets/MapboxHollowUprightPin.fbx using Guid(116af72a5fd4e4a2c8d1730f94b8a8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be6fd8aa347f0b1fd3d83bc77ae1f7a') in 0.009817 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-arts.png
-  artifactKey: Guid(808e85b573ffd4216a301aa2c9e1293f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-arts.png using Guid(808e85b573ffd4216a301aa2c9e1293f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c368b0a6dc36238fd677facfd11fde1e') in 0.006237 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/parking-garage-15.png
-  artifactKey: Guid(47cff5dacfd00fd4ab1ab91babe10ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/parking-garage-15.png using Guid(47cff5dacfd00fd4ab1ab91babe10ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be7181d85983425324ec7026053e784f') in 0.006405 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular.ttf
-  artifactKey: Guid(892eeaee9ddf4004890484bdd415a52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Textures/Fonts/MouseMemoirs-Regular.ttf using Guid(892eeaee9ddf4004890484bdd415a52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07def7bbf20ff04299353b71d69c6ebb') in 0.007858 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/square-15.png
-  artifactKey: Guid(d20eb1ed6e139ec448e72058bfbf4e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/square-15.png using Guid(d20eb1ed6e139ec448e72058bfbf4e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662d36b2c712ed9458e043cef42e4fa5') in 0.004610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules/TransparentBlueSelectablePolygonStack.asset
-  artifactKey: Guid(8c7bd733341fc0a47bfbaea08b5f15ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules/TransparentBlueSelectablePolygonStack.asset using Guid(8c7bd733341fc0a47bfbaea08b5f15ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df5a7ba0d46c9355326b849d5b12fca7') in 0.000488 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Mapbox/Examples/Resources/maki/marker-15.png
-  artifactKey: Guid(b2b2af9fd67ea81428b7708fa4d8a368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/maki/marker-15.png using Guid(b2b2af9fd67ea81428b7708fa4d8a368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5302b655a827bc7564cb962603c498a5') in 0.004998 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Mapbox/Examples/Resources/TransparentBlueMaterial.mat
-  artifactKey: Guid(80bd19d68c4ef4a659db43cfb6b09b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Resources/TransparentBlueMaterial.mat using Guid(80bd19d68c4ef4a659db43cfb6b09b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dfd30d9325ad00bd14880a8ae1eb0c') in 0.262846 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 2.746935 seconds.
-  path: Assets/Mapbox/Unity/SourceLayers/SubLayerDarkStyle.cs
-  artifactKey: Guid(7d55a2e41465546e99410e822cbb622e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Unity/SourceLayers/SubLayerDarkStyle.cs using Guid(7d55a2e41465546e99410e822cbb622e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c1455555a36329b8d635c7702bd5c7') in 0.000387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.887043 seconds.
-  path: Assets/Mapbox/Unity/Editor/StyleSearchWindow.cs
-  artifactKey: Guid(18df46ce639d943da85b5586c62e7d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Unity/Editor/StyleSearchWindow.cs using Guid(18df46ce639d943da85b5586c62e7d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f023b01611ee76c6eb7f7a3ab466727') in 0.000372 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.595975 seconds.
-  path: Assets/Mapbox/Unity/Editor/PropertyDrawers/StyleSearchAttributeDrawer.cs
-  artifactKey: Guid(ecd235e0566324c96b4039ca60f6b2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Unity/Editor/PropertyDrawers/StyleSearchAttributeDrawer.cs using Guid(ecd235e0566324c96b4039ca60f6b2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2629af7af0389633e1e758550b696d') in 0.000514 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.665997 seconds.
-  path: Assets/Mapbox/Unity/Utilities/StyleSearchAttribute.cs
-  artifactKey: Guid(e0cf90e1694114eb59752c674484735f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Unity/Utilities/StyleSearchAttribute.cs using Guid(e0cf90e1694114eb59752c674484735f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2e765820e3cb9c67217fd0ca886c4ac') in 0.000434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.090574 seconds.
-  path: Assets/Mapbox/Examples/Scripts/PoiMarkerHelper.cs
-  artifactKey: Guid(73a4653526c970849afac4be5c5930ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/Scripts/PoiMarkerHelper.cs using Guid(73a4653526c970849afac4be5c5930ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6eccf7bb100ef5080868b3ff6701a6') in 0.000406 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.491163 seconds.
-  path: Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/Earcut.cs
-  artifactKey: Guid(e7b04bd1ddccfc64aa5e47acd098a3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/Earcut.cs using Guid(e7b04bd1ddccfc64aa5e47acd098a3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b05fddb44f4fafb8503863a60f3e82') in 0.000268 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.079635 seconds.
-  path: Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs
-  artifactKey: Guid(5798356d101127847ac0719a2d1ab574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs using Guid(5798356d101127847ac0719a2d1ab574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942c0834191d46b748ed16815ab9019b') in 0.000273 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.778895 seconds.
-  path: Assets/Mapbox/Examples/_sharedModules
-  artifactKey: Guid(f7c7ee4e09f02f248a8ec08427bdc05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Examples/_sharedModules using Guid(f7c7ee4e09f02f248a8ec08427bdc05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ebed03877ff024ac4858cca3faa950') in 0.000404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2

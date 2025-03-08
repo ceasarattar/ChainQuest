@@ -736,6 +736,7 @@
 "Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Scripts/UI/AnimationController.cs"
 "Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Scripts/UI/GameController.cs"
 "Assets/Samples/Solana SDK/1.2.7/Sample Wallet/Solana Wallet/Scripts/utility/QRGenerator.cs"
+"Assets/Scripts/SceneSwitcher.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
