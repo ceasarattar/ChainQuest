@@ -317,7 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rpcCluster: 1
   customRpc: 
-  webSocketsRpc: 
+  webSocketsRpc: wss://api.devnet.solana.com
   autoConnectOnStartup: 0
   web3AuthWalletOptions:
     appName: Web3Auth Sample App
