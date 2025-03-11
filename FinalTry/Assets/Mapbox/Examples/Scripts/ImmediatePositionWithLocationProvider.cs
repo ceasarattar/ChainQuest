@@ -1,42 +1,49 @@
-﻿namespace Mapbox.Examples
+﻿using Mapbox.Unity.Location;
+using Mapbox.Unity.Map;
+using UnityEngine;
+
+namespace Mapbox.Examples
 {
-	using Mapbox.Unity.Location;
-	using Mapbox.Unity.Map;
-	using UnityEngine;
+    public class ImmediatePositionWithLocationProvider : MonoBehaviour
+    {
+        private bool _isInitialized;
+        private ILocationProvider _locationProvider;
+        private AbstractMap _map;
 
-	public class ImmediatePositionWithLocationProvider : MonoBehaviour
-	{
+        ILocationProvider LocationProvider
+        {
+            get
+            {
+                if (_locationProvider == null)
+                {
+                    _locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider;
+                }
+                return _locationProvider;
+            }
+        }
 
-		bool _isInitialized;
+        void Start()
+        {
+            _map = FindObjectOfType<AbstractMap>();
+            if (_map == null)
+            {
+                Debug.LogError("AbstractMap not found!");
+                return;
+            }
 
-		ILocationProvider _locationProvider;
-		ILocationProvider LocationProvider
-		{
-			get
-			{
-				if (_locationProvider == null)
-				{
-					_locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider;
-				}
+            _map.OnInitialized += () =>
+            {
+                Debug.Log("Map initialized. Positioning character.");
+                _isInitialized = true;
+            };
+        }
 
-				return _locationProvider;
-			}
-		}
-
-		Vector3 _targetPosition;
-
-		void Start()
-		{
-			LocationProviderFactory.Instance.mapManager.OnInitialized += () => _isInitialized = true;
-		}
-
-		void LateUpdate()
-		{
-			if (_isInitialized)
-			{
-				var map = LocationProviderFactory.Instance.mapManager;
-				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
-			}
-		}
-	}
+        void LateUpdate()
+        {
+            if (_isInitialized && _map != null)
+            {
+                transform.localPosition = _map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
+            }
+        }
+    }
 }

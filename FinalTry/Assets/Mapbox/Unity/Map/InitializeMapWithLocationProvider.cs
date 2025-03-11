@@ -33,7 +33,7 @@
 
         private IEnumerator CheckLocationTimeout()
         {
-            yield return new WaitForSeconds(5f); // Wait 5 seconds for location
+            yield return new WaitForSeconds(1f); // Wait 5 seconds for location
             if (!_isMapInitialized) // Use custom flag instead of IsInitialized
             {
                 Debug.LogWarning("No location update received, initializing with default location.");

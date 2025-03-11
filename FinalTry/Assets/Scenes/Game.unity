@@ -187,7 +187,8 @@ GameObject:
   - component: {fileID: 159634027}
   - component: {fileID: 159634025}
   - component: {fileID: 159634026}
-  m_Layer: 0
+  - component: {fileID: 159634028}
+  m_Layer: 3
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +210,7 @@ MonoBehaviour:
   _options:
     locationOptions:
       latitudeLongitude: 37.784179, -122.401583
-      zoom: 16
+      zoom: 15
     extentOptions:
       extentType: 0
       defaultExtents:
@@ -596,6 +597,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &159634028
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159634024}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &234181014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,11 +1464,10 @@ MonoBehaviour:
   endPoint: {fileID: 1426712542}
   map: {fileID: 159634025}
   rayPlane: {fileID: 1746432969}
-  _movementEndPoint: {fileID: 1538829360}
+  _movementEndPoint: {fileID: 1767268376}
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
-  cam: {fileID: 234181019}
+    m_Bits: 8
 --- !u!95 &1176362811 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95022966287224496, guid: b4281c0219e45624e855839527bdc6f1,
@@ -1797,6 +1819,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1767268376}
+    - targetCorrespondingSourceObject: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1426712542}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1438539700862716, guid: b4281c0219e45624e855839527bdc6f1,
@@ -1921,7 +1947,7 @@ GameObject:
   - component: {fileID: 1746432972}
   - component: {fileID: 1746432971}
   - component: {fileID: 1746432970}
-  m_Layer: 17
+  m_Layer: 3
   m_Name: RaycastPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2014,6 +2040,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1767268375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1767268376}
+  m_Layer: 0
+  m_Name: MovementEndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1767268376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767268375}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.018181818, y: 0.018181818, z: 0.018181818}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1176362814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1962332871
 GameObject:
