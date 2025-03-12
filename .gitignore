@@ -1,7 +1,9 @@
+
+!FinalTry/
+!FinalTry/* # Allow all files in FinalTry unless otherwise ignored
 # Ignore everything in the root except FinalTry
 *
 !FinalTry/
-
 # Inside FinalTry, ignore Unity generated files
 FinalTry/[Ll]ibrary/
 FinalTry/[Tt]emp/
