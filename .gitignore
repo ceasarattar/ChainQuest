@@ -17,3 +17,5 @@
 *.pdb
 FinalTry/UserSettings/Layouts/*.dwlt
 FinalTry_backup/
+*.mdb.meta
+*.pdb.meta
