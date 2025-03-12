@@ -1,0 +1,22 @@
+
+!FinalTry/
+!FinalTry/* # Allow all files in FinalTry unless otherwise ignored
+# Ignore everything in the root except FinalTry
+*
+!FinalTry/
+# Inside FinalTry, ignore Unity generated files
+FinalTry/[Ll]ibrary/
+FinalTry/[Tt]emp/
+FinalTry/[Oo]bj/
+FinalTry/[Bb]uild/
+FinalTry/[Bb]uilds/
+FinalTry/[Ll]ogs/
+FinalTry/*.csproj
+FinalTry/*.unityproj
+FinalTry/*.sln
+FinalTry/*.suo
+FinalTry/*.tmp
+FinalTry/*.user
+FinalTry/*.pidb
+FinalTry/*.booproj
+FinalTry/*.blob
