@@ -13,3 +13,7 @@
 *.pidb
 *.booproj
 *.blob
+*.mdb
+*.pdb
+FinalTry/UserSettings/Layouts/*.dwlt
+FinalTry_backup/
